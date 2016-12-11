@@ -1,6 +1,6 @@
 $:.push File.expand_path("../lib", __FILE__)
 
-require "administrate/field/json"
+#require "administrate/field/json"
 
 Gem::Specification.new do |gem|
   gem.name = "administrate-field-json"
@@ -17,5 +17,5 @@ Gem::Specification.new do |gem|
   gem.test_files = `git ls-files -- {test,spec,features}/*`.split("\n")
 
   gem.add_dependency "administrate", "~> 0.2.2"
-  gem.add_dependency "rails", "~> 4.2"
+  gem.add_dependency "rails", ">= 4.2"
 end
